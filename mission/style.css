@@ -1,0 +1,66 @@
+/* General styles */
+body {
+    font-family: "Times New Roman";
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+}
+
+p:first-of-type {
+    margin-top: 50px;
+}
+
+.container {
+    border: 2px solid #ccc9c6;
+    padding: 60px 150px;
+    margin: 30px auto;
+    max-width: 850px;
+    box-sizing: border-box;
+}
+
+header {
+    border-bottom: 1px solid rgb(204, 204, 204);    
+}
+
+h1 {
+    text-transform: uppercase;
+    margin: 10px 0;
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300; 
+    letter-spacing: 2px; 
+}
+
+h2 {
+    color: #006EB6;
+    margin: 0px 0 0px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 350;
+    letter-spacing: 2px;
+}
+
+main {
+    text-align: left;
+    margin-bottom: 40px;
+
+}
+
+.list-does {
+    font-style: italic; 
+}
+
+li {
+    margin-bottom: 20px; 
+    list-style-type: decimal;
+  }
+
+footer {
+    margin-top: 40px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
