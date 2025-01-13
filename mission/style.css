@@ -1,4 +1,9 @@
-/* General styles */
+
+header {
+    border-bottom: 1px solid rgb(204, 204, 204);
+    text-transform: uppercase; 
+}
+
 body {
     font-family: "Times New Roman";
     font-size: 18px;
@@ -19,9 +24,6 @@ p:first-of-type {
     box-sizing: border-box;
 }
 
-header {
-    border-bottom: 1px solid rgb(204, 204, 204);    
-}
 
 h1 {
     text-transform: uppercase;
