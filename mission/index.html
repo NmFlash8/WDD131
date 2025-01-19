@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>BYU-Idaho Mission Statment</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Mission Statment</h1>
-            <h2>Brigham Young University-Idaho</h2>
-        </header>
-        <main>
-            <p>
-                Brigham Young University-Idaho was founded and is supported and guided by The Church of Jesus Christ of Latter-day Saints.
-                Its mission is to develop disciples of Jesus Christ who are leaders in their homes, the Church, and their communities.
-            </p>
-            <p class="list-does">
-                The university does this by:
-            </p>
-            <ul>
-                <li>Building testimonies of the restored gospel of Jesus Christ and fostering its principles in a wholesome academic, cultural, and social environment.</li>
-                <li>Providing a high-quality education that prepares students of diverse interests and abilities for lifelong learning and employment.</li>
-                <li>Serving as many students as possible within resource constraints.</li>
-                <li>Delivering education that is affordable for students and the Church.</li>
-            </ul>
-        </main>
-        <footer>
-            <img src="byui-logo_blue.webp" alt="BYU-Idaho logo" class="logo">
-        </footer>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>BYU-Idaho Mission Statement</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="mission.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Mission Statement</h1>
+                <h2>Brigham Young University-Idaho</h2>
+            </header>
+            <main>
+                <p>
+                    Brigham Young University-Idaho was founded and is supported and guided by The Church of Jesus Christ of Latter-day Saints.
+                    Its mission is to develop disciples of Jesus Christ who are leaders in their homes, the Church, and their communities.
+                </p>
+                <p class="list-does">
+                    The university does this by:
+                </p>
+                <ul>
+                    <li>Building testimonies of the restored gospel of Jesus Christ and fostering its principles in a wholesome academic, cultural, and social environment.</li>
+                    <li>Providing a high-quality education that prepares students of diverse interests and abilities for lifelong learning and employment.</li>
+                    <li>Serving as many students as possible within resource constraints.</li>
+                    <li>Delivering education that is affordable for students and the Church.</li>
+                </ul>
+            </main>
+            <footer>
+                <img src="byui-logo_light.webp" alt="BYU-Idaho logo" class="logo">
+            </footer>
+        </div>
+        <div>
+            <label for="theme-select">Choose Theme:</label>
+            <select id="theme-select">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+        </div>
+    </body>
 </html>
