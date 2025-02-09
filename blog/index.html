@@ -24,16 +24,41 @@
     <main id="maincontent">
         <h2>Latest Reviews</h2>
         <section>
-            <article>
-                <h3>Book Title 1</h3>
-                <p><strong>Author:</strong> Author Name 1</p>
-                <p><strong>Review:</strong> This is a review for Book Title 1...</p>
-            </article>
+            <article class="book-entry">
+                <div class="details">
+                    <p><strong>Date:</strong> 2025-02-08</p>
+                    <p><strong>Age:</strong> 15</p>
+                    <p><strong>Book Type:</strong> Fiction</p>
+                    <p><strong>Rating:</strong> <span class="stars" data-rating="4"></span></p> <!-- Rating Display -->
+                </div>
 
-            <article>
-                <h3>Book Title 2</h3>
-                <p><strong>Author:</strong> Author Name 2</p>
-                <p><strong>Review:</strong> This is a review for Book Title 2...</p>
+                <div class="book-info">
+                    <h3>Book Title 1</h3>
+                    <img src="book1.png" alt="Book Title 1" class="book-image">
+                    <p><strong>Description:</strong> This is a review for Book Title 1. It is a great book with exciting plot twists and memorable characters.</p>
+                </div>
+
+                <div class="filters">
+                    <h4>Filters</h4>
+                    <form>
+                        <label for="bookType">Book Type:</label>
+                        <select id="bookType" name="bookType">
+                            <option value="fiction">Fiction</option>
+                            <option value="nonfiction">Non-fiction</option>
+                            <option value="biography">Biography</option>
+                            <!-- Add more options here -->
+                        </select>
+                        <br>
+                        <label for="rating">Rating:</label>
+                        <select id="rating" name="rating">
+                            <option value="1">1 Star</option>
+                            <option value="2">2 Stars</option>
+                            <option value="3">3 Stars</option>
+                            <option value="4">4 Stars</option>
+                            <option value="5">5 Stars</option>
+                        </select>
+                    </form>
+                </div>
             </article>
         </section>
     </main>
@@ -41,5 +66,6 @@
     <footer>
         <p>&copy; 2025 Book Review Blog</p>
     </footer>
+
 </body>
 </html>

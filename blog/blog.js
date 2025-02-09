@@ -1,25 +1,19 @@
-// Example of book data, could be used to dynamically populate content on the page later
-const books = [
-    {
-        title: "Book Title 1",
-        author: "Author Name 1",
-        review: "This is a review for Book Title 1. It is a great book!",
-    },
-    {
-        title: "Book Title 2",
-        author: "Author Name 2",
-        review: "This is a review for Book Title 2. It is also a great book!",
-    },
-];
-
 document.addEventListener("DOMContentLoaded", () => {
-    // Example: populate the first article with book data
-    const article = document.querySelector("article");
-    const title = article.querySelector("h3");
-    const author = article.querySelector("p strong");
-    const review = article.querySelector("p:last-of-type");
+    // Select the rating element (stars container) and set the stars dynamically
+    const ratingElements = document.querySelectorAll('.stars');
+    
+    ratingElements.forEach(element => {
+        const rating = parseInt(element.getAttribute('data-rating'));
+        let stars = '';
+        
+        for (let i = 0; i < 5; i++) {
+            if (i < rating) {
+                stars += '★';  // Filled star
+            } else {
+                stars += '☆';  // Empty star
+            }
+        }
 
-    title.textContent = books[0].title;
-    author.textContent = `Author: ${books[0].author}`;
-    review.textContent = `Review: ${books[0].review}`;
+        element.textContent = stars;  // Set the star rating display
+    });
 });
