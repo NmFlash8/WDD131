@@ -30,7 +30,7 @@ header {
 nav {
     margin-top: 10px;
     display: flex;
-    justify-content: flex-end;  /* Aligns items to the right */
+    justify-content: flex-end; /* Aligns items to the right */
 }
 
 nav ul {
@@ -45,52 +45,45 @@ nav ul li {
 
 /* Main Content */
 main {
-    margin: 20px;
+    margin: 20px auto;
+    max-width: 800px; /* Restrict the width like the navbar */
 }
 
-.book-entry {
+/* Article Styling */
+.article-container {
     display: flex;
-    gap: 20px;  /* Adds space between columns */
-    margin-bottom: 40px;
-    justify-content: space-between;
+    border-bottom: 2px solid #ccc;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    align-items: flex-start; /* Align to the top of the container */
 }
 
-.details,
-.filters {
-    flex: 1;  /* Allow the details and filters sections to grow evenly */
+.details {
+    width: 250px; /* Fixed width for the details section */
+    text-align: right;
+    padding-right: 20px;
+    margin-right: 20px;
+    font-size: 0.9em;
+}
+
+.details p {
+    margin: 5px 0;
 }
 
 .book-info {
-    flex: 2;  /* The book info section will take more space */
+    flex: 1;
+    text-align: left;
 }
 
-.details p,
-.filters form {
-    text-align: right;
+.book-info h3 {
+    margin-top: 0; /* Remove top margin */
 }
 
 .book-info img {
-    width: 150px;  /* Set the width of the book cover */
-    height: 225px; /* Set the height of the book cover */
-    object-fit: cover; /* Ensures the image scales correctly without distortion */
-    margin-bottom: 10px; /* Adds space below the image */
-}
-
-/* Filter form styling */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* Star rating style */
-.stars {
-    font-size: 1.2em;
-    color: #FFB400; /* Gold color for the stars */
-}
-
-.stars {
-    margin-right: 5px;
+    width: 150px;
+    height: 225px;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
 /* Footer styling */
