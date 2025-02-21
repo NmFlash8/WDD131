@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A blog for book reviews">
+    <meta name="author" content="Noah McSheehy">
+    <title>Book Review Blog</title>
+    <link rel="stylesheet" href="blog.css">
+    <script src="blog.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Book Review Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Archive</a></li>
+                <li><a href="#">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="maincontent">
+        <h2>Latest Reviews</h2>
+        <section>
+            <article class="book-entry">
+                <div class="details">
+                    <p><strong>Date:</strong> 2025-02-08</p>
+                    <p><strong>Age:</strong> 15</p>
+                    <p><strong>Book Type:</strong> Fiction</p>
+                    <p><strong>Rating:</strong> <span class="stars" data-rating="4"></span></p> <!-- Rating Display -->
+                </div>
+
+                <div class="book-info">
+                    <h3>Book Title 1</h3>
+                    <img src="book1.jpg" alt="Book Title 1" class="book-image">
+                    <p><strong>Description:</strong> This is a review for Book Title 1. It is a great book with exciting plot twists and memorable characters.</p>
+                </div>
+
+                <div class="filters">
+                    <h4>Filters</h4>
+                    <form>
+                        <label for="bookType">Book Type:</label>
+                        <select id="bookType" name="bookType">
+                            <option value="fiction">Fiction</option>
+                            <option value="nonfiction">Non-fiction</option>
+                            <option value="biography">Biography</option>
+                            <!-- Add more options here -->
+                        </select>
+                        <br>
+                        <label for="rating">Rating:</label>
+                        <select id="rating" name="rating">
+                            <option value="1">1 Star</option>
+                            <option value="2">2 Stars</option>
+                            <option value="3">3 Stars</option>
+                            <option value="4">4 Stars</option>
+                            <option value="5">5 Stars</option>
+                        </select>
+                    </form>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Book Review Blog</p>
+    </footer>
+
+</body>
+</html>
