@@ -1,0 +1,57 @@
+/* Register form styles */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+fieldset {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* Hide elements by default */
+.hide {
+    display: none;
+}
+
+/* Grid layout for participants */
+form fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+form fieldset section {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button[type="button"] {
+    grid-column: span 2;
+    margin-top: 20px;
+}

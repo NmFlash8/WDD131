@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Registration form for youth camp.">
+    <meta name="author" content="Noah McSheehy">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="register.css">
+    <script defer src="register.js"></script>
+</head>
+<body>
+    <h1>Camp Registration Form</h1>
+    <form id="registration-form">
+        <fieldset>
+            <legend>Participant Information</legend>
+            <section class="participant1">
+                <label for="name1">Name:</label>
+                <input type="text" id="name1" name="name1" required>
+                <label for="age1">Age:</label>
+                <input type="number" id="age1" name="age1" required>
+                <label for="fee1">Fee:</label>
+                <input type="number" id="fee1" name="fee1" required>
+            </section>
+        </fieldset>
+
+        <button type="button" id="add-participant">Add Participant</button>
+
+        <button type="submit">Submit Form</button>
+    </form>
+
+    <div id="summary" class="hide"></div>
+</body>
+</html>
