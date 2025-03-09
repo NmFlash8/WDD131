@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+:root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: 'Amatic SC', cursive;
+}
+
+body {
+    font-family: var(--primary-font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--text-light);
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: black;
+    padding: 10px;
+}
+
+header img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* Search Bar */
+.search {
+    margin: 20px;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 60%;
+    max-width: 300px;
+    border: 1px solid var(--text-dark);
+    border-radius: 5px;
+}
+
+#searchBtn {
+    padding: 10px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Recipe Cards */
+#recipes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+ 
+.recipe-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Fixed width */
+    height: 400px; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.recipe-card img {
+    width: 250px;  /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensure images are properly scaled */
+    border-radius: 8px;
+}
+
+.recipe-card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.recipe-card p {
+    font-size: 0.9em;
+    color: var(--text-dark);
+    flex-grow: 1; /* Allows text to adjust while keeping spacing */
+}
+
+.rating {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: var(--text-light);
+    font-size: 0.8em;
+}
+
+.social img {
+    width: 30px;
+    margin: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #recipes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recipe-card {
+        width: 90%;
+    }
+}
